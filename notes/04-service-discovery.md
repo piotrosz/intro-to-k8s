@@ -33,8 +33,7 @@ Env variables and DNS allows Pods to discover Services.
 
 ### Example
 
-(Support (Counter & Poller)) pod <-> App tier service <-> Server pod <-> Data tier service <-> Redis pod
-
+(Support tier (Counter & Poller)) pod <-> App tier service <-> Server pod <-> Data tier service <-> Redis pod
 
 ```PowerShell
 
@@ -51,6 +50,5 @@ kubectl create -f ./src/4.3-app_tier.yaml -n service-discovery
 kubectl create -f ./src/4.4-support_tier.yaml -n service-discovery
 
 kubectl logs -n dervice-discovery support-tier poller -f
-
 
 ```

@@ -19,7 +19,9 @@ kubectl scale -n deployments deployments support-tier --replicas=3
 
 kubectl delete -n deployments pods support-tier-74c4d75698-v8cfz support-tier-74c4d75698-fm2t8
 
+# and 
+
 kubectl scale -n deployments deployments app-tier --replicas 3
 
 kubectl describe -n deployments service app-tier
-``
+```
